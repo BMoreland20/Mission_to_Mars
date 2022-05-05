@@ -1,12 +1,11 @@
-# %%
-# Import Splinter and BeautifulSoup
+# Import Splinter, BeautifulSoup, and Pandas
 from splinter import Browser
 from bs4 import BeautifulSoup as soup
-from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import datetime as dt
+from webdriver_manager.chrome import ChromeDriverManager
 
-# %%
+
 def scrape_all():
     # Initiate headless driver for deployment
     executable_path = {'executable_path': ChromeDriverManager().install()}
@@ -27,7 +26,7 @@ def scrape_all():
     browser.quit()
     return data
 
-#%%
+
 def mars_news(browser):
 
     # Scrape Mars News
@@ -55,7 +54,7 @@ def mars_news(browser):
 
     return news_title, news_p
 
-#%%
+
 def featured_image(browser):
     # Visit URL
     url = 'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html'
@@ -82,7 +81,6 @@ def featured_image(browser):
 
     return img_url
 
-#%%
 def mars_facts():
     # Add try/except for error handling
     try:
