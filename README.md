@@ -15,6 +15,7 @@ Deliverable 2:
 Deliverable 3:
 1) Tested mobile friendliness
 2) Added at least two bootstap 3 components:
+
 	i) Changed background of whole page to a Mars themed color
 	ii) Changed text color to be easily read on new background
 	iii) Added favicon image to code
